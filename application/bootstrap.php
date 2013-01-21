@@ -64,6 +64,11 @@ ini_set('unserialize_callback_func', 'spl_autoload_call');
 I18n::lang('en-us');
 
 /**
+ * Set the default cookie salt update to make your app more secure
+ */
+Cookie::$salt = 'kohana';
+
+/**
  * Set Kohana::$environment if a 'KOHANA_ENV' environment variable has been supplied.
  *
  * Note: If you supply an invalid environment name, a PHP warning will be thrown
